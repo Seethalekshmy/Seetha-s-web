@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEETHA LEKSHMI G</title>
+    <script src="https://kit.fontawesome.com/20650f24eb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div>
-<h1>POTFOLIO</h1>
-<a href="blog.html">projects</a>
-<h2>SEETHA LEKSHMI .G</h2>
-<h2>DESIGNER | DEVELOPER | ARTIST </h2>
-<A href="https://github.com/Seethalekshmy">github</A>
-<A href="https://www.linkedin.com/in/seetha-lekshmi-7773052b7/">LinkedIn</A>
-<A href="http://instagram.com/__see.tha__/">Instagram</A>
-<h3>ABOUT ME</h3>
-<p> A Computer Science student with a strong interest in design and front-end development.
-     Enjoys blending logic with creativity to build clean, intuitive digital experiences. 
-     Focused on clarity, usability, and thoughtful details that make products feel simple and meaningful.
-     Constantly learning, experimenting, and evolving through both design and code.</p>
-<img src="seetha.jpeg" >
-</div>
+    <div>
+        <h1>POTFOLIO</h1>
+        <h2>SEETHA LEKSHMI.G</h2>
+        <h2>DESIGNER | DEVELOPER | ARTIST </h2>
+        <A href="https://github.com/Seethalekshmy">github</A>
+        <i class="fa-brands fa-github"></i>
+        <A href="https://www.linkedin.com/in/seetha-lekshmi-7773052b7/">LinkedIn</A>
+        <i class="fa-brands fa-linkedin"></i>
+        <A href="http://instagram.com/__see.tha__/">Instagram</A>
+        <i class="fa-brands fa-instagram"></i>
+        <h3>ABOUT ME</h3>
+        <p> A Computer Science student with a strong interest in design and front-end development.
+            Enjoys blending logic with creativity to build clean, intuitive digital experiences.
+            Focused on clarity, usability, and thoughtful details that make products feel simple and meaningful.
+            Constantly learning, experimenting, and evolving through both design and code.</p>
+        <img src="seetha.jpeg">
+        
+        <!-- Include the library. -->
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+        </script>
+
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "Seethalekshmy");
+
+            // or enable responsive functionality:
+            GitHubCalendar(".calendar", "Seethalekshmy", { responsive: true, global_stats: false });
+
+            // Use a proxy
+            // GitHubCalendar(".calendar", "Seethalekshmy", {
+            //     proxy(username) {
+            //         return fetch(`https://your-proxy.com/github?user=${username}`)
+            //     }
+            // }).then(r => r.text())
+        </script>
+    </div>
+    <h2>PROJECTS</h2>
 </body>
+
 </html>
